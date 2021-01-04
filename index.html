@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock, Paper, Scissors - Naphstyle</title>
+
+</head>
+
+<body onload="initGame()">
+    <main class="main-container flex-center column">
+        <section class="rules-modal hide column">
+            <img src="./images/image-rules.svg" alt="">
+            <button class="rules-btn">Close</button>
+        </section>
+        <section class="score-board flex space-between">
+            <div class="game-name">
+                <h3>Rock</h3>
+                <h3>Paper</h3>
+                <h3>Scissors</h3>
+            </div>
+            <div class="score flex-center column">Score: <span class="score-num">0</span></div>
+        </section>
+        <section class="game-board flex-center ">
+            <section class="options-board flex-center">
+                <button class="option-btn paper-btn" name="paper"><img src="./images/icon-paper.svg" alt=""></button>
+                <button class="option-btn scissors-btn" name="scissors"><img src="./images/icon-scissors.svg" alt=""></button>
+                <button class="option-btn rock-btn" name="rock"><img src="./images/icon-rock.svg" alt=""></button>
+            </section>
+            <section class="choices-board flex hide">
+                <div class="user-choice-container flex-center column">
+                    <h3>You picked:</h3>
+                    <div class="user-choice"></div>
+                </div>
+                <div class="user-choice-container flex-center column">
+                    <div class="announcement"></div>
+                    <button class="restart-btn">Play Again</button>
+                </div>
+                <div class="user-choice-container flex-center column">
+                    <h3>The house picked:</h3>
+                    <div class="cpu-choice"></div>
+                </div>
+            </section>
+        </section>
+        <footer class="main-footer flex">
+            <button class="rules-btn">Rules</button>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
